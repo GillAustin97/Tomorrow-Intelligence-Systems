@@ -1,22 +1,69 @@
-<main
-  class="projects-placeholder"
-  style="
-    background-image:
-      linear-gradient(#ffffff12 1px, transparent 1px),
-      linear-gradient(90deg, #ffffff12 1px, transparent 1px);
-    background-size: 32px 32px;
-  "
->
-  <img
-    src="tis-shield.png"
-    alt="Tomorrow Intelligence Systems shield"
-    width="112"
-    style="display: block; margin: 0 auto 1.5rem;"
-  >
-  <h1>Our Projects</h1>
-  <p>
-    <span aria-hidden="true" style="color: var(--orange);">●</span>
-    SYSTEM STATUS · UNDER CONSTRUCTION
-  </p>
-  <blockquote>“Roads? Where we’re going, we don’t need roads.”</blockquote>
-</main>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Projects | Tomorrow Intelligence Systems</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .projects-placeholder {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      min-height: 100svh;
+      padding: 2rem 1.25rem;
+      text-align: center;
+      background-color: var(--navy, #062f54);
+      background-image:
+        linear-gradient(#ffffff12 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff12 1px, transparent 1px);
+      background-size: 32px 32px;
+      color: var(--cream, #f4e8c9);
+    }
+
+    .projects-logo {
+      display: block;
+      width: 112px;
+      height: auto;
+      margin: 0 auto 1.5rem;
+    }
+
+    .projects-placeholder h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2rem, 8vw, 5rem);
+      line-height: 1;
+    }
+
+    .projects-status {
+      color: #ffac80;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .projects-placeholder blockquote {
+      margin: 1.5rem 0;
+    }
+
+    .projects-home {
+      display: inline-block;
+      padding: 0.65rem 1rem;
+      border: 2px solid var(--orange, #e34b1e);
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  </style>
+</head>
+<body>
+  <main class="projects-placeholder">
+    <div>
+      <img class="projects-logo" src="tis-shield.png"
+           alt="Tomorrow Intelligence Systems shield" width="112">
+      <h1>Our Projects</h1>
+      <p class="projects-status">● UNDER CONSTRUCTION</p>
+      <blockquote>“Roads? Where we’re going, we don’t need roads.”</blockquote>
+      <a class="projects-home" href="./">Back to home</a>
+    </div>
+  </main>
+</body>
+</html>
